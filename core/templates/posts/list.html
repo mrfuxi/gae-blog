@@ -1,0 +1,8 @@
+{% include "posts/form.html" %}
+
+<div id="article_list">
+{% for post in posts %}
+    {% include "posts/post_short.html" %}
+    <hr/>
+{% endfor %}
+</div>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}
+    All posts - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    {% include "posts/list.html" %}
+{% endblock content %}

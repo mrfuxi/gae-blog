@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% include "posts/list.html" %}
+
+    <p class="text-right">
+        <a href="{% url blog %}">
+            Read more in blog
+        </a>
+    </p>
+{% endblock %}

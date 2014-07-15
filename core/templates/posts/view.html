@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ post.title }} - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    {% include "posts/form.html" %}
+    {% include "posts/post_full.html" %}
+{% endblock content %}

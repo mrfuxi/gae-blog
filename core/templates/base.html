@@ -1,0 +1,46 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+        {% block title %}
+            Karol's blog
+        {% endblock title %}
+        </title>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'blog.css' %}">
+        <script src="{% static 'blog.js' %}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="row clearfix page-header">
+                    <div class="col-md-12 column ">
+                        <h1>
+                            Coding after hours
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-md-10 column">
+                        {% block content %}
+                        {% endblock content %}
+                    </div>
+
+                    <div class="col-md-2 column">
+                        {% include "menu.html" %}
+                    </div>
+                </div>
+
+                <div class="col-md-12 column">
+                    {% include "footer.html" %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

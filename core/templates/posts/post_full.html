@@ -1,0 +1,15 @@
+<article class="post">
+    <h2 class="post_title">
+        {{ post.title }}
+    </h2>
+    <h5>
+        Written by {{ post.author }} on {{ post.created_at|date }}.
+    </h5>
+    <p class="post_body">
+        {{ post.body }}
+    </p>
+
+    <p>
+        Commnets...
+    </p>
+</article>

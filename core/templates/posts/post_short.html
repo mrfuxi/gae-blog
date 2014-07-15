@@ -1,0 +1,11 @@
+<article class="post_in_list">
+    <h3>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </h3>
+    <h5>
+        Written by {{ post.author }} on {{ post.created_at|date }}.
+    </h5>
+    <p>
+        {{ post.body|truncatechars:100 }}
+    </p>
+</article>
