@@ -1,5 +1,5 @@
 application: blog-karol-duleba
-version: 1
+version: 2
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -16,7 +16,7 @@ inbound_services:
 
 handlers:
 - url: /static
-  static_dir: core/static
+  static_dir: blog/static
   expiration: '1m'
 
 - url: /favicon.ico

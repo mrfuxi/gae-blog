@@ -10,8 +10,8 @@ from django.views.generic import TemplateView
 from django.views.generic.base import TemplateResponseMixin
 from google.appengine.api import users
 
-from core.models import Post, slugify
-from core.forms import PostForm
+from blog.models import Post, slugify
+from blog.forms import PostForm
 
 
 class UserMixin(object):

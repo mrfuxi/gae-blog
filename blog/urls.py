@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import url, patterns
-from core.views import HomeView, PostListView, PostView, LoginView, AboutMe
+from blog.views import HomeView, PostListView, PostView, LoginView, AboutMe
 
 
 urlpatterns = patterns(
